@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang = "kr">
+<head>
+	<meta charset = "utf-8">
+	<title>숫자야구 :: </title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
+	<style>
+		body {
+			background-image: url("ybg2.png");
+		}
+		table {
+			width: 300px;
+			padding: 10px;
+			font-size: 16pt;
+			float: right;
+			text-align: center;
+			table-layout: fixed;
+			margin-right: 1em;
+		}
+		p {
+			margin-left: 1em;
+			font-size: 17pt;
+		}
+
+		h1, h3, th, td, p { 
+     	font-family: 'Nanum Gothic'
+		}
+
+		#yay {
+			font-family: 'Nanum Gothic Coding'
+		}
+	</style>
+</head>
+<body id = "body">
+	<br>
+	<h1>무슨 숫자일까요?</h1>
+	<br>
+	<img src = "6-0.png" id = "1st">
+	<img src = "6-1.png" id = "2nd">
+	<img src = "6-2.png" id = "3rd">
+	<img src = "6-2.png" id = "3rd">
+	<table border = "1" summary = "sbs" id = "tble2">
+		<caption><h3>player2의 예측 숫자</h3></caption>
+		<thead>
+			<tr>
+				<th>숫자</th>
+				<th>S</th>
+				<th>B</th>
+			</tr>
+		</thead>
+		<tbody id = "tbd">
+		</tbody>
+	</table>
+	<table border = "1" summary = "sbs" id = "tble">
+		<caption><h3>player1의 예측 숫자</h3></caption>
+		<thead>
+			<tr>
+				<th>숫자</th>
+				<th>S</th>
+				<th>B</th>
+			</tr>
+		</thead>
+		<tbody id = "tbd">
+		</tbody>
+	</table>
+	
+	<br><br>
+	<p id = "winss"></p>
+	<p id = "turn">player1이 예측할 차례입니다!</p>
+	<p id = "yay"></p>
+	<br>
+	<img src = "index.png" onClick = "window.location = 'index.html'" style = "cursor: pointer;">
+	<img src = "giveup.png" onClick = "giveUp()" style = "cursor: pointer;">
+</body>
+</html>

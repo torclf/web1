@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang = "kr">
+<head>
+	<meta charset = "utf-8">
+	<title>숫자야구 :: 여러명, 5</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="shortcut icon" type="image/x-icon" href="ball.png">
+	<style>
+		body {
+			background-image: url("ybg2.png");
+		}
+		table {
+			width: 400px;
+			padding: 10px;
+			font-size: 20pt;
+			float: right;
+			text-align: center;
+			table-layout: fixed;
+		}
+
+		p {
+			margin-left: 1em;
+			font-size: 17pt;
+		}
+
+		form {
+			margin-left: 1em;
+			font-size: 14pt;
+		}
+
+		h1, h3, th, td, p, form { 
+     	font-family: 'Nanum Gothic'
+		}
+	</style>
+</head>
+<body id = "body">
+	<script src = "2-5.js"></script>
+	<br>
+	<h1>무슨 숫자일까요?</h1>
+	<br>
+	<img src = "blank5.png" id = "1st">
+	<img src = "blank5.png" id = "2nd">
+	<img src = "blank5.png" id = "3rd">
+	<img src = "blank5.png" id = "4st">
+	<img src = "blank5.png" id = "5st">
+	<table border = "1" summary = "sbs" id = "tble">
+		<caption><h3>당신의 예측 숫자</h3></caption>
+		<thead>
+			<tr>
+				<th>숫자</th>
+				<th>S</th>
+				<th>B</th>
+			</tr>
+		</thead>
+		<tbody id = "tbd">
+		</tbody>
+	</table>
+	<br><br>
+	<p id = "winss">연승 기록: 0</p>
+	<p id = "aver">평균 시도 횟수: </p>
+	<p id = "end"></p>
+	<p id = "time"></p>
+	<br>
+	<form name = "fr">
+		시간 표시 <input type = "checkbox" name = "check2">
+	</form>
+	<br>
+	<img src = "index.png" onClick = "gogo()" style = "cursor: pointer;">
+	<img src = "giveup.png" onClick = "giveUp()" style = "cursor: pointer;">
+</body>
+</html>
